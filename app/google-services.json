@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "791098476288",
+    "project_id": "loja-online-58a34",
+    "storage_bucket": "loja-online-58a34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791098476288:android:85773f90e7f6695b5555e5",
+        "android_client_info": {
+          "package_name": "br.com.brq.lojaonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791098476288-epe0kes780985vov58eegk26f0bp78f7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.brq.lojaonline",
+            "certificate_hash": "c491d402c2e4d8305fb2c33b86a8b2e5a39ca655"
+          }
+        },
+        {
+          "client_id": "791098476288-k2h40in6jhib8di9mee33sbjto5luh0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTHXDWYRHO6hV_kor8WcHiKAbR8o4eN20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791098476288-k2h40in6jhib8di9mee33sbjto5luh0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
