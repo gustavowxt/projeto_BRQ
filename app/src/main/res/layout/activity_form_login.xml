@@ -6,6 +6,11 @@
     android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -72,4 +77,35 @@
         />
 
 </LinearLayout>
+    //TELA DE CARREGAMENTO DE TRANSIÇÃO DE TELA
+        <FrameLayout
+            android:id="@+id/frameL"
+            android:layout_width="match_parent"
+            android:background="@color/Roxo"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/white"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carregando..."
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="480dp"
+                android:gravity="center"
+                />
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
 </androidx.core.widget.NestedScrollView>

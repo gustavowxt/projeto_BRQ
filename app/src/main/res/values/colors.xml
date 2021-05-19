@@ -11,4 +11,6 @@
     <color name="AzulV">#00bcd4</color>
     <color name="Azul">#0000FF</color>
     <color name="AzulE">#0000CD</color>
+    <color name="Cinza">#f2f0f0</color>
+    <color name="Vermelho">#FF0000</color>
 </resources>

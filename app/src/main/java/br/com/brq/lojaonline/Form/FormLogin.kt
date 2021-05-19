@@ -3,6 +3,7 @@ package br.com.brq.lojaonline.Form
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import br.com.brq.lojaonline.R
 import br.com.brq.lojaonline.TelaPrincipal
 import com.google.android.material.snackbar.Snackbar
@@ -14,6 +15,8 @@ class FormLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form_login)
+
+        VerificarUsuarioLogado()
 
         supportActionBar!!.hide()
 
@@ -46,6 +49,7 @@ class FormLogin : AppCompatActivity() {
 
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha).addOnCompleteListener {
             if (it.isSuccessful){
+              frameL.visibility = View.VISIBLE
               AbrirTelaPrincipal()
             }
 
@@ -60,6 +64,15 @@ class FormLogin : AppCompatActivity() {
 
         }
 
+    }
+
+    private fun VerificarUsuarioLogado(){
+
+        val usuarioAtual = FirebaseAuth.getInstance().currentUser
+
+        if (usuarioAtual != null){
+            AbrirTelaPrincipal()
+        }
     }
 
     private fun AbrirTelaPrincipal(){
